@@ -1,61 +1,62 @@
-/*
-.video-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
 
-.video-container video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-*/
-a {
-    color: #fff;
-    font-size: 50em;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 2px 2px #000;
-}
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
 
-.video-container video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.overlayText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 2em;
-    z-index: 1;
-}
-.me-2{
-    border: antiquewhite;
-    border: -moz-default-background-color;
-    position: absolute;
-
-}
 .nav-pills .nav-item .nav-link {
-    color: red; /* Change the color of the non-active links */
-}
-.nav-pills .nav-item .nav-link.active {
-    color: red; /* Change the color of the active link */
-    background-color: red; /* Change the background color of the active link */
+    color: darksalmon;
 }
 
-.card-img-top {
-    height: 200px; /* Set the desired height for the images */
-    object-fit: cover; /* Ensure the images cover the specified height without distortion */
+.nav-pills .nav-item .nav-link.active {
+    color: black;
+    background-color: darksalmon;
+}
+
+    .card-img-top {
+         height: 345px;
+         object-fit: cover;
+     }
+
+
+     .nav-pills .nav-item .nav-link {
+         color: darksalmon;
+     }
+
+    .nav-pills .nav-item .nav-link.active {
+        color: black;
+        background-color: darksalmon;
+    }
+.btn-primary{
+    color: black;
+    background-color: lightpink;
+}
+/* Default styles */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.desktop-video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-image {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjust the border-radius as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow effect */
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .desktop-video {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
 }
