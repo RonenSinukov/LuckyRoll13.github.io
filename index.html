@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Danielle nail design </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="./style.css">
+
 </head>
 <body>
 <section>
-    <div>
-        <div></div>
-    </div>
-</section>
-<section>
     <main>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="./images/Logo.png" alt="Dt Logo" class="rounded-circle me-2" width="50" height="42">
 
+                <span class="fs-4">Danielle Nails</span>
+            </a>
+
+            <style>
+                /* Define your custom CSS */
+                .nav-pills .nav-item .nav-link {
+                    color: darksalmon; /* Change the color of the non-active links */
+                }
+
+                .nav-pills .nav-item .nav-link.active {
+                    color: black; /* Change the color of the active link */
+                    background-color: darksalmon; /* Change the background color of the active link */
+                }
+            </style>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="Aboutus.html" class="nav-link">קצת עלינו</a></li>
+                <li class="nav-item"><a href="Works.html" class="nav-link">מחירון ועבודות</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">דף הבית</a></li>
+            </ul>
+        </header>
         <section class="py-5 text-center container">
             <div class="video-container">
-                <video width="100%" autoplay muted playsinline loop>
+                <video width="100%" autoplay muted loop>
                     <source src="./images/video4.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -47,11 +65,8 @@
                 </div>
         </section>
 
-
-
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
-
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
@@ -114,5 +129,7 @@
             <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
         </ul>
     </footer>
+
 </div>
+<link href="./style.css">
 </html>

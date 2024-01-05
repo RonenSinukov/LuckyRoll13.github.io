@@ -41,3 +41,21 @@ a {
     font-size: 2em;
     z-index: 1;
 }
+.me-2{
+    border: antiquewhite;
+    border: -moz-default-background-color;
+    position: absolute;
+
+}
+.nav-pills .nav-item .nav-link {
+    color: red; /* Change the color of the non-active links */
+}
+.nav-pills .nav-item .nav-link.active {
+    color: red; /* Change the color of the active link */
+    background-color: red; /* Change the background color of the active link */
+}
+
+.card-img-top {
+    height: 200px; /* Set the desired height for the images */
+    object-fit: cover; /* Ensure the images cover the specified height without distortion */
+}
