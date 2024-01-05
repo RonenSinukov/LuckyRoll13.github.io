@@ -60,3 +60,6 @@
         display: block;
     }
 }
+.rounded-circle {
+    border-radius: 50%; /* Ensures the image is a circle */
+}
