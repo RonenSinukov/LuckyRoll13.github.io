@@ -63,3 +63,64 @@
 .rounded-circle {
     border-radius: 50%; /* Ensures the image is a circle */
 }
+/* Add these styles to your CSS file */
+.card-img-container {
+    position: relative;
+}
+
+.card-img-container .card-img-top {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-img-container:hover .card-img-top {
+    opacity: 0.7; /* Adjust the transparency level as needed */
+}
+
+.card-img-container .card-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    display: none;
+}
+
+.card-img-container:hover .card-info {
+    display: block;
+}
+/* Style for the card and its image overlay */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7); /* Background color for overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay-content {
+    opacity: 1;
+}
+
+.overlay-content p {
+    color: white; /* Text color */
+    text-align: center;
+    /* Additional styling for the text content */
+}

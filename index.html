@@ -54,45 +54,67 @@
 
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/bunny-nails.png" class="card-img-top" alt="Image 1">
-                            <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                            <div class="card-body">
-                                <p class="card-text">בנייה בעיצוב אישי עם תוספות</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
+                <div class="album py-5 bg-body-tertiary">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <div class="card-image-overlay">
+                                        <img src="./images/bunny-nails.png" class="card-img-top" alt="Image 1">
+                                        <div class="overlay-content">
+                                            <p>מגוון בניות/דוגמאות וכמובן תוספות</p>
+                                        </div>
                                     </div>
-
+                                    <div class="card-body">
+                                        <p class="card-text">בנייה בעיצוב אישי עם תוספות</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <!-- Any additional buttons or content here -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/french1.png" class="card-img-top" alt="Image 1">
-                            <div class="card-body">
-                                <p class="card-text">'מבנה אנטומי על ציפורן טבעית עם פראנץ</p>
-                                <div class="d-flex justify-content-between align-items-center">
-
+                            <!-- Other card elements -->
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <div class="card-image-overlay">
+                                        <img src="./images/french1.png" class="card-img-top" alt="Image 1">
+                                        <div class="overlay-content">
+                                            <p>שיקום קוססות,מבנה אנטומי על טבעיות</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Content within the card body remains the same -->
+                                        <p class="card-text">'מבנה אנטומי על ציפורן טבעית עם פראנץ</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <!-- Additional content or buttons if needed -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="images/lakjelmanicure.png" class="card-img-top" alt="Image 1">
-                            <div class="card-body">
-                                <p class="card-text">לק ג'ל על ציפורן טבעית עם מבנה אנטומי ומניקור משולב </p>
-                                <div class="d-flex justify-content-between align-items-center">
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <div class="card-image-overlay">
+                                        <img src="images/lakjelmanicure.png" class="card-img-top" alt="Image 2">
+                                        <div class="overlay-content">
+                                            <p>לק ג'ל ומניקור רוסי משולב</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Content within the card body remains the same -->
+                                        <p class="card-text">לק ג'ל על ציפורן טבעית עם מבנה אנטומי ומניקור משולב</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <!-- Additional content or buttons if needed -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
+
                         </div>
-                    </div>
-
-
-                </div>
             </div>
         </div>
 
@@ -102,19 +124,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024, danielle tillinger Nail Salon</span>
+    <footer class="container py-3 border-top">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024, Danielle Tillinger Nail Salon</p>
+                <p class="text-muted small">Created by RS designs</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <nav>
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="me-3"><a href="mailto:tillingetdanielle@gmail.com">tillingetdanielle@gmail.com</a></li>
+                        <li>Nahariya</li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="mailto:tillingetdanielle@gmail.com">tillingetdanielle@gmail.com</a></li>
-            <li class="ms-3">Nahariya</li>
-        </ul>
-        <p class="text-muted small">Created by RS designs</p>
     </footer>
 
 </div>
