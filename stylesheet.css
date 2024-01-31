@@ -124,3 +124,12 @@
     text-align: center;
     /* Additional styling for the text content */
 }
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .card:hover .overlay-content {
+        /* Your hover styles for mobile */
+    }
+}
+.card.hovered .overlay-content {
+    /* Your hover styles for mobile */
+}
