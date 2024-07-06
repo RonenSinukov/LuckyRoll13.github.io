@@ -3,7 +3,7 @@
 
   <head>
       <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=yes">
   <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -114,13 +114,27 @@
   
 <div class="container position-relative">
   <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/LuckyRoll-Backgournd-img.png);">
-    
+    <style>
+        .bg-cover {
+            background-size: cover; /* Scale the background image to cover the entire element */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            height: 100%; /* Ensure the height is 100% of the parent container */
+        }
+
+        @media (max-width: 767px) {
+            .bg-cover {
+                background-position: center center; /* Adjust the position for smaller screens */
+                background-size: cover; /* Ensure it still covers the container */
+            }
+        }
+    </style>
   </div>
     <div class="row">
 
 <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
   <h1 class="display-1 fw-bold mt-5"> </h1>
-  <p class="lead">Boxing & BJJ by shabi shilon</p>
+  <p class="lead d-none d-lg-block">Boxing & BJJ by shabi shilon</p>
   <a href="https://api.whatsapp.com/send?phone=972546420206" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">לאימון הראשון לחץ כאן</a>
 </div>
 
